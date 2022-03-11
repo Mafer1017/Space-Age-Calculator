@@ -11,7 +11,9 @@ export default class Person {
 
   venusConverter() {
     this.venusAge = parseInt(this.earthAge / .62);
-    }
+  }
   
-
+  marsConverter() {
+    this.marsAge = parseInt(this.earthAge / 1.88);
+  }
 }
