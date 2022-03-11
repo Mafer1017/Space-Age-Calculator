@@ -15,7 +15,7 @@ describe('mercuryConverter', () => {
   test('should correctly convert the users Earth age to their age relative to Mercury', () => {
     const person = new Person("Buzz", 20);
     person.mercuryConverter();
-    expect(person.mercuryAge).toEqual("83")
+    expect(person.mercuryAge).toEqual(83)
   });
 
 });
