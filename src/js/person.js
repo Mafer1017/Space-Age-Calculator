@@ -3,4 +3,10 @@ export default class Person {
     this.name = name;
     this.earthAge = earthAge;
   }
+
+
+  mercuryConverter() {
+  this.mercuryAge = parseInt(this.earthAge / .24);
+  }
+
 }
