@@ -16,4 +16,8 @@ export default class Person {
   marsConverter() {
     this.marsAge = parseInt(this.earthAge / 1.88);
   }
+
+  jupiterConverter() {
+    this.jupiterAge = parseInt(this.earthAge / 11.86);
+  }
 }
