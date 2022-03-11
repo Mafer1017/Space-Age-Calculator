@@ -9,4 +9,9 @@ export default class Person {
   this.mercuryAge = parseInt(this.earthAge / .24);
   }
 
+  venusConverter() {
+    this.venusAge = parseInt(this.earthAge / .62);
+    }
+  
+
 }
