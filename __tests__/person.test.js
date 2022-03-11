@@ -19,3 +19,13 @@ describe('mercuryConverter', () => {
   });
 
 });
+
+describe('venusConverter', () => {
+
+  test('should correctly convert the users Earth age to their age relative to Venus', () => {
+    const person = new Person("Buzz", 20);
+    person.venusConverter();
+    expect(person.venusAge).toEqual(32)
+  });
+
+});
