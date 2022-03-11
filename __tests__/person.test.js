@@ -2,10 +2,11 @@ import Person from './../src/js/person.js'
 
 describe('Person', () => {
 
-  test('should correctly create a Person object with name and age relative to Earth', () => {
-    const person = new Person("Buzz", 20);
+  test('should correctly create a Person object with name, age relative to Earth, and life expectancy relative to Earth years', () => {
+    const person = new Person("Buzz", 20, 75);
     expect(person.name).toEqual("Buzz")
     expect(person.earthAge).toEqual(20);
+    expect(lifeExpectancy.earthAge).toEqual(75);
   });
 
 });
