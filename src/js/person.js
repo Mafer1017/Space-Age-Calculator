@@ -1,7 +1,8 @@
 export default class Person {
-  constructor (name, earthAge) {
+  constructor (name, earthAge, lifeExpectancy) {
     this.name = name;
     this.earthAge = earthAge;
+    this.lifeExpectancy = lifeExpectancy;
   }
 
 
