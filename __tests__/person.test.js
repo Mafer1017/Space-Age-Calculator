@@ -39,3 +39,13 @@ describe('marsConverter', () => {
   });
 
 });
+
+describe('jupiterConverter', () => {
+
+  test('should correctly convert the users Earth age to their age relative to Jupiter', () => {
+    const person = new Person("Buzz", 20);
+    person.jupiterConverter();
+    expect(person.jupiterAge).toEqual(1)
+  });
+
+});
