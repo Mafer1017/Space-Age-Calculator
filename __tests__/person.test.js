@@ -29,3 +29,13 @@ describe('venusConverter', () => {
   });
 
 });
+
+describe('marsConverter', () => {
+
+  test('should correctly convert the users Earth age to their age relative to Mars', () => {
+    const person = new Person("Buzz", 20);
+    person.marsConverter();
+    expect(person.marsAge).toEqual(10)
+  });
+
+});
