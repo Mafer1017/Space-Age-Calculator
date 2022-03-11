@@ -6,7 +6,7 @@ describe('Person', () => {
     const person = new Person("Buzz", 20, 75);
     expect(person.name).toEqual("Buzz")
     expect(person.earthAge).toEqual(20);
-    expect(lifeExpectancy.earthAge).toEqual(75);
+    expect(person.lifeExpectancy).toEqual(75);
   });
 
 });
