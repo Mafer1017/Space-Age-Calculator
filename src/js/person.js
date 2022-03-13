@@ -9,6 +9,7 @@ export default class Person {
     this.lifeExpectancy = lifeExpectancy;
     this.yearsOnEarth;
     this.yearsOnMercury;
+    this.yearsOnVenus;
   }
 
 
@@ -43,6 +44,15 @@ export default class Person {
       this.yearsOnMercury = parseInt((this.lifeExpectancy / .24)  - this.mercuryAge);
     } else {
       this.yearsOnMercury = parseInt(this.mercuryAge - (this.lifeExpectancy / .24));
+    }
+  }
+
+  venusExpectancy() {
+    let differenceOnVenus = (this.lifeExpectancy / .62) - this.venusAge;
+    if (differenceOnVenus > 0) {
+      this.yearsOnVenus = parseInt((this.lifeExpectancy / .62)  - this.venusAge);
+    } else {
+      this.yearsOnVenus = parseInt(this.venusAge - (this.lifeExpectancy / .62));
     }
   }
 }
