@@ -71,3 +71,14 @@ describe('mercuryExpectancy', () => {
   });
 
 });
+
+describe('venusExpectancy', () => {
+
+  test('should correctly determine how many years the user has left to live on Venus', () => {
+    const person = new Person("Buzz", 20, 75);
+    person.venusConverter();
+    person.venusExpectancy();
+    expect(person.yearsOnVenus).toEqual(88)
+  });
+
+});
