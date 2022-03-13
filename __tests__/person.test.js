@@ -50,3 +50,13 @@ describe('jupiterConverter', () => {
   });
 
 });
+
+describe('earthExpectancy', () => {
+
+  test('should correctly determine how many years the user has left to live on Earth', () => {
+    const person = new Person("Buzz", 20, 75);
+    person.earthExpectancy();
+    expect(person.yearsOnEarth).toEqual(55)
+  });
+
+});
