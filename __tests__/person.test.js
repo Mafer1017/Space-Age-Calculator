@@ -60,3 +60,13 @@ describe('earthExpectancy', () => {
   });
 
 });
+
+describe('mercuryExpectancy', () => {
+
+  test('should correctly determine how many years the user has left to live on Mercury', () => {
+    const person = new Person("Buzz", 20, 75);
+    person.mercuryExpectancy();
+    expect(person.yearsOnMercury).toEqual(311)
+  });
+
+});
