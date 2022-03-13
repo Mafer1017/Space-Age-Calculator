@@ -65,8 +65,9 @@ describe('mercuryExpectancy', () => {
 
   test('should correctly determine how many years the user has left to live on Mercury', () => {
     const person = new Person("Buzz", 20, 75);
+    person.mercuryConverter();
     person.mercuryExpectancy();
-    expect(person.yearsOnMercury).toEqual(311)
+    expect(person.yearsOnMercury).toEqual(229)
   });
 
 });
