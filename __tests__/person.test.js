@@ -93,3 +93,14 @@ describe('marsExpectancy', () => {
   });
 
 });
+
+describe('jupiterExpectancy', () => {
+
+  test('should correctly determine how many years the user has left to live on Jupiter', () => {
+    const person = new Person("Buzz", 20, 75);
+    person.jupiterConverter();
+    person.jupiterExpectancy();
+    expect(person.yearsOnJupiter).toEqual(5)
+  });
+
+});
