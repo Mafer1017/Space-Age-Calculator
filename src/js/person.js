@@ -2,8 +2,13 @@ export default class Person {
   constructor (name, earthAge, lifeExpectancy) {
     this.name = name;
     this.earthAge = earthAge;
+    this.mercuryAge;
+    this.venusAge;
+    this.marsAge;
+    this.jupiterAge;
     this.lifeExpectancy = lifeExpectancy;
     this.yearsOnEarth;
+    this.yearsOnMercury;
   }
 
 
@@ -26,9 +31,18 @@ export default class Person {
   earthExpectancy() {
     let differenceOnEarth = this.lifeExpectancy - this.earthAge;
     if (differenceOnEarth > 0) {
-      this.yearsOnEarth = parseInt(this.lifeExpectancy - this.earthAge)
+      this.yearsOnEarth = parseInt(this.lifeExpectancy - this.earthAge);
     } else {
-      this.yearsOnEarth = parseInt(this.earthAge - this.lifeExpectancy)
+      this.yearsOnEarth = parseInt(this.earthAge - this.lifeExpectancy);
+    }
+  }
+
+  mercuryExpectancy() {
+    let differenceOnMercury = (this.lifeExpectancy / .24) - this.mercuryAge;
+    if (differenceOnMercury > 0) {
+      this.yearsOnMercury = parseInt((this.lifeExpectancy / .24)  - this.mercuryAge);
+    } else {
+      this.yearsOnMercury = parseInt(this.mercuryAge - (this.lifeExpectancy / .24));
     }
   }
 }
