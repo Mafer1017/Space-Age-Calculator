@@ -100,7 +100,7 @@ describe('jupiterExpectancy', () => {
     const person = new Person("Buzz", 20, 75);
     person.jupiterConverter();
     person.jupiterExpectancy();
-    expect(person.yearsOnJupiter).toEqual(38)
+    expect(person.yearsOnJupiter).toEqual(5)
   });
 
 });
