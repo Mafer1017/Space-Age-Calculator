@@ -68,11 +68,11 @@ export default class Person {
   }
 
   jupiterExpectancy() {
-    let differenceOnJupiter = (this.lifeExpectancy / 1.88) - this.jupiterAge;
+    let differenceOnJupiter = (this.lifeExpectancy / 11.86) - this.jupiterAge;
     if (differenceOnJupiter > 0) {
-      this.yearsOnJupiter = parseInt((this.lifeExpectancy / 1.88)  - this.jupiterAge);
+      this.yearsOnJupiter = parseInt((this.lifeExpectancy / 11.86)  - this.jupiterAge);
     } else {
-      this.yearsOnJupiter = parseInt(this.jupiterAge - (this.lifeExpectancy / 1.88));
+      this.yearsOnJupiter = parseInt(this.jupiterAge - (this.lifeExpectancy / 11.86));
     }
   }
-}
+}""
