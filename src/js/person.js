@@ -3,6 +3,7 @@ export default class Person {
     this.name = name;
     this.earthAge = earthAge;
     this.lifeExpectancy = lifeExpectancy;
+    this.yearsOnEarth;
   }
 
 
@@ -20,5 +21,14 @@ export default class Person {
 
   jupiterConverter() {
     this.jupiterAge = parseInt(this.earthAge / 11.86);
+  }
+
+  earthExpectancy() {
+    let differenceOnEarth = this.lifeExpectancy - this.earthAge;
+    if (differenceOnEarth > 0) {
+      this.yearsOnEarth = parseInt(this.lifeExpectancy - this.earthAge)
+    } else {
+      this.yearsOnEarth = parseInt(this.earthAge - this.lifeExpectancy)
+    }
   }
 }
