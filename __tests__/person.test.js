@@ -108,6 +108,12 @@ describe('marsExpectancy', () => {
     person.marsExpectancy();
     expect(person.yearsOnMars).toEqual(29)
   });
+  test('should correctly determine how many years over life expectancy the inputted users age is in Mercury Years.', () => {
+    const person = new Person("Neil", 80, 75);
+    person.marsConverter();
+    person.marsExpectancy();
+    expect(person.yearsOnMars).toEqual(2)
+  });
 
 });
 
@@ -118,6 +124,12 @@ describe('jupiterExpectancy', () => {
     person.jupiterConverter();
     person.jupiterExpectancy();
     expect(person.yearsOnJupiter).toEqual(5)
+  });
+  test('should correctly determine how many years over life expectancy the inputted users age is in Jupiter Years.', () => {
+    const person = new Person("Neil", 100, 75);
+    person.jupiterConverter();
+    person.jupiterExpectancy();
+    expect(person.yearsOnJupiter).toEqual(1)
   });
 
 });
