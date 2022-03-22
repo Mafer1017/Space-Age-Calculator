@@ -14,7 +14,6 @@ export default class Person {
     this.yearsOnJupiter;
   }
 
-
   mercuryConverter() {
   this.mercuryAge = parseInt(this.earthAge / .24);
   }
@@ -37,7 +36,7 @@ export default class Person {
       this.yearsOnEarth = parseInt(this.lifeExpectancy - this.earthAge);
     } else {
       this.yearsOnEarth = parseInt(this.earthAge - this.lifeExpectancy);
-    }
+    };
   }
 
   mercuryExpectancy() {
@@ -75,4 +74,4 @@ export default class Person {
       this.yearsOnJupiter = parseInt(this.jupiterAge - (this.lifeExpectancy / 11.86));
     }
   }
-}""
+}
