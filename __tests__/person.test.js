@@ -74,7 +74,7 @@ describe('mercuryExpectancy', () => {
     person.mercuryExpectancy();
     expect(person.yearsOnMercury).toEqual(229)
   });
-  test('should correctly determine how many years the user has left to live on Mercury', () => {
+  test('should correctly determine how many years over life expectancy the inputted users age is in Mercury Years.', () => {
     const person = new Person("Neil", 80, 75);
     person.mercuryConverter();
     person.mercuryExpectancy();
@@ -90,6 +90,12 @@ describe('venusExpectancy', () => {
     person.venusConverter();
     person.venusExpectancy();
     expect(person.yearsOnVenus).toEqual(88)
+  });
+  test('should correctly determine how many years over life expectancy the inputted users age is in Venus Years.', () => {
+    const person = new Person("Neil", 80, 75);
+    person.venusConverter();
+    person.venusExpectancy();
+    expect(person.yearsOnVenus).toEqual(8)
   });
 
 });
