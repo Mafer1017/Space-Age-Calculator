@@ -58,6 +58,11 @@ describe('earthExpectancy', () => {
     person.earthExpectancy();
     expect(person.yearsOnEarth).toEqual(55)
   });
+  test('should correctly determine how many years over life expectancy the inputted users age is in Earth Years.', () => {
+    const person = new Person("Neil", 80, 75);
+    person.earthExpectancy();
+    expect(person.yearsOnEarth).toEqual(5)
+  });
 
 });
 
