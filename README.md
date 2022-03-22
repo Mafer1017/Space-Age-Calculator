@@ -54,9 +54,29 @@
   - Input: 20 years
   - Output: 29
 
-* should correctly determine how many years the user has left to live on Jupiter'.
+* should correctly determine how many years the user has left to live on Jupiter.
   - Input: 20 years
   - Output: 5
+
+* should correctly determine how many years over life expectancy the inputted users age is in Earth Years.
+  - Input: 80 years
+  - Output: 5
+
+* should correctly determine how many years over life expectancy the inputted users age is in Mercury Years.
+  - Input: 80 years
+  - Output: 20
+
+* should correctly determine how many years over life expectancy the inputted users age is in Venus Years.
+  - Input: 80 years
+  - Output: 8
+
+  * should correctly determine how many years over life expectancy the inputted users age is in Venus Years.
+  - Input: 80 years
+  - Output: 2
+
+  * should correctly determine how many years over life expectancy the inputted users age is in Venus Years.
+  - Input: 100 years
+  - Output: 1
 
 ## License
 
